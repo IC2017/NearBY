@@ -9,13 +9,14 @@ CognitiveConcierge is an end-to-end Swift application sample with an iOS front e
 <img src="images/chat.png" width="500"/>
 </p>
 
-## Enhancements 
+## Change Set
 
 - Auto detection of Location using CLLocationManager.
 - Bluemix Mobile Analytics.
 - Plug and play options (You can add any category like museums, movie-theater etc.,).
 - Flexible Kitura calls. Easy to add Google Place types.
 - Push Notification via OpenWhisk whenever there is a significant location change.
+- Mobile Foundation Authentication and Security added
 
 More to follow....
 
@@ -100,4 +101,19 @@ open a browser and point to localhost:8090 to see Kitura running.
 
 ### Additional
 1. You can configure Bluemix Mobile Analytics by creating the service on Bluemix and adding the key in CognitiveConcierge.plist.
+2. Also, Configure Push Notifications following the instructions [here](https://console.ng.bluemix.net/docs/services/mobilepush/t_push_provider_ios.html#create-push-credentials-apns) 
+
+   - Provide Push Notification service credentials under AppDelegate.swift
+      ```
+    var pushAppGUID:String = ""
+    var pushAppClientSecret:String = ""
+    var pushAppSecret:String = ""
+    var pushAppRegion:String = ""
+      ```
+3. Mobile Foundation UserLogin Authentication 
+
+   - Follow the instructions [here](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/authentication-and-security/user-authentication/ios/) to add authentication to your app via Mobile Foundation.
+   - Check the code under login folder on Xcode. 
+   - Create a Mobile Foundation service on Bluemix and add the url to mfpclient.plist file.
+   
 
