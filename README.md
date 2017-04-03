@@ -41,9 +41,9 @@ Once you have an API Key, go to the Google Developer's Console, and enable the G
 
 ### Clone, Create & Deploy the Server Application to Bluemix using ICT.
 
-1. Install [IBM Cloud Tools for Swift] (http://cloudtools.bluemix.net/) for MacOS.
+1. Install [IBM Cloud Tools for Swift](http://cloudtools.bluemix.net/) for MacOS.
 2. Once you've installed the application, you can open it to get started.
-3. Goto IBM Cloud Tools for Swift( App Menu) -> Advanced -> Create Sample Project from Github Repo and paste this link **https://github.com/VidyasagarMSC/NearBY** and click Next.
+3. Goto IBM Cloud Tools for Swift( App Menu) -> Advanced -> Create Sample Project from Github Repo and paste this link **https://github.com/IC2017/NearBY** and click Next.
 4. Give a unique name to your project. Also a unique name (without special characters) to your Cloud Runtime (Server-Side). Click Save Files to Local Computer to clone the project.
 5. This deployment to Bluemix may take a few minutes. Your Kitura server and other Bluemix services required for your app is provisioned along with the deployment.
 
@@ -104,12 +104,14 @@ open a browser and point to localhost:8090 to see Kitura running.
 2. Also, Configure Push Notifications following the instructions [here](https://console.ng.bluemix.net/docs/services/mobilepush/t_push_provider_ios.html#create-push-credentials-apns) 
 
    - Provide Push Notification service credentials under AppDelegate.swift
-      ```
+     
+   ```
     var pushAppGUID:String = ""
     var pushAppClientSecret:String = ""
     var pushAppSecret:String = ""
     var pushAppRegion:String = ""
-      ```
+    
+   ```
 3. Mobile Foundation UserLogin Authentication 
 
    - Follow the instructions [here](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/authentication-and-security/user-authentication/ios/) to add authentication to your app via Mobile Foundation.
